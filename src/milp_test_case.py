@@ -12,7 +12,7 @@ import pulp
 # Paths
 # ---------------------------------------------------------------------------
 ROOT        = Path(__file__).parent.parent
-DATA_DIR    = ROOT / "data" / "test_case"
+DATA_DIR    = ROOT / "test_case"
 NODES_CSV   = DATA_DIR / "test_nodes.csv"
 PARAMS_JSON = DATA_DIR / "test_case_params.json"
 RESULTS_DIR = ROOT / "results"
