@@ -44,7 +44,8 @@ def _reconstruct_from_routes(sol: dict) -> dict:
         for pos in range(len(route) - 1):
             i, j = route[pos], route[pos + 1]
             x_val[(i, j, k)] = True
-        # arrival times: accumulate from depot, waiting if a node is not open yet.
+        # Arrival times for route-only solutions include waiting when a truck
+        # reaches a node before its time window opens. Keep depot departure at 0.
         arr = 0.0
         for pos, node in enumerate(route):
             if pos > 0:
