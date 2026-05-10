@@ -1,0 +1,20 @@
+node_id,name,lat,lon,node_type,demand_tonnes,side
+D0,İBB Atık Yönetimi Müdürlüğü İBB Beyoğlu Ek Hizmet Binası,41.0389079990667,28.9715250005473,Depot,0.0,Avrupa
+S1,Baruthane Katı Atık Aktarma İstasyonu ,41.04899,28.968704,Transfer Station,92016.79000000001,Avrupa
+S2,Yenibosna Katı Atık Aktarma İstasyonu ,40.99794055,28.82506594,Transfer Station,112835.76000000001,Avrupa
+S3,Başakşehir Katı Atık Aktarma İstasyonu ,41.146396,28.778397,Transfer Station,18331.02,Avrupa
+S4,Silivri Katı Atık Aktarma İstasyonu ,41.09103842,28.29018384,Transfer Station,6838.18,Avrupa
+S5,Hasdal Katı Atık Aktarma İstasyonu ,41.13722435,28.93079057,Transfer Station,25427.36,Avrupa
+S6,Küçük Bakkalköy Katı Atık Aktarma İstasyonu ,40.98520513,29.12996739,Transfer Station,75807.66,Anadolu
+S7,Hekimbaşı Katı Atık Aktama İstasyonu ,41.05831853,29.11340743,Transfer Station,9169.97,Anadolu
+S8,Aydınlı Katı Atık Aktarma İstasyonu ,40.86088235,29.34715122,Transfer Station,30617.18,Anadolu
+S9,Şile Katı Atık Aktarma İstasyonu ,41.15313753,29.63946372,Transfer Station,1900.06,Anadolu
+F1,Odayeri Düzenli Depolama Alanı Tıbbi Atık Yakma Tesisi ,41.2161579991942,28.8545650003672,Disposal,0.0,Avrupa
+F2,Kömürcüoda Düzenli Depolama Alanı,41.1508654587288,29.3692714005402,Disposal,0.0,Anadolu
+F3,Odayeri Düzenli Depolama Alanı ,41.2127199994295,28.8577619995369,Disposal,0.0,Avrupa
+F4,Kömürcüoda Endüstriyel Atık Tesisi ,41.1461847590375,29.3769867698783,Disposal,0.0,Anadolu
+F5,Kömürcüoda Enerji Üretim (LFG) Tesisi,41.1457535289401,29.3774226299322,Disposal,0.0,Anadolu
+F6,Hasdal Enerji Üretim Tesisi,41.1372243486914,28.9307905702657,Disposal,0.0,Avrupa
+F7,Odayeri Enerji Üretim Tesisi ,41.2161889994851,28.8534840000917,Disposal,0.0,Avrupa
+F8,Açık Kompost ve Geri Dönüşüm Tesisi ,41.1428449490565,29.3707492901884,Disposal,0.0,Anadolu
+F9,Kompost Tesisi,41.2214989986859,28.8183579998198,Disposal,0.0,Avrupa

@@ -1,0 +1,189 @@
+{
+  "depot": {
+    "node_id": "D0",
+    "name": "İBB Atık Yönetimi Müdürlüğü İBB Beyoğlu Ek Hizmet Binası",
+    "lat": 41.0389079990667,
+    "lon": 28.9715250005473,
+    "node_type": "Depot"
+  },
+  "transfer_stations": [
+    {
+      "node_id": "S1",
+      "name": "Baruthane Katı Atık Aktarma İstasyonu ",
+      "lat": 41.04899,
+      "lon": 28.968704,
+      "total_waste_tonnes": 92016.79000000001,
+      "total_trips": 19490,
+      "side": "Avrupa"
+    },
+    {
+      "node_id": "S2",
+      "name": "Yenibosna Katı Atık Aktarma İstasyonu ",
+      "lat": 40.99794055,
+      "lon": 28.82506594,
+      "total_waste_tonnes": 112835.76000000001,
+      "total_trips": 17639,
+      "side": "Avrupa"
+    },
+    {
+      "node_id": "S3",
+      "name": "Başakşehir Katı Atık Aktarma İstasyonu ",
+      "lat": 41.146396,
+      "lon": 28.778397,
+      "total_waste_tonnes": 18331.02,
+      "total_trips": 2429,
+      "side": "Avrupa"
+    },
+    {
+      "node_id": "S4",
+      "name": "Silivri Katı Atık Aktarma İstasyonu ",
+      "lat": 41.09103842,
+      "lon": 28.29018384,
+      "total_waste_tonnes": 6838.18,
+      "total_trips": 1104,
+      "side": "Avrupa"
+    },
+    {
+      "node_id": "S5",
+      "name": "Hasdal Katı Atık Aktarma İstasyonu ",
+      "lat": 41.13722435,
+      "lon": 28.93079057,
+      "total_waste_tonnes": 25427.36,
+      "total_trips": 3711,
+      "side": "Avrupa"
+    },
+    {
+      "node_id": "S6",
+      "name": "Küçük Bakkalköy Katı Atık Aktarma İstasyonu ",
+      "lat": 40.98520513,
+      "lon": 29.12996739,
+      "total_waste_tonnes": 75807.66,
+      "total_trips": 13447,
+      "side": "Anadolu"
+    },
+    {
+      "node_id": "S7",
+      "name": "Hekimbaşı Katı Atık Aktama İstasyonu ",
+      "lat": 41.05831853,
+      "lon": 29.11340743,
+      "total_waste_tonnes": 9169.97,
+      "total_trips": 1261,
+      "side": "Anadolu"
+    },
+    {
+      "node_id": "S8",
+      "name": "Aydınlı Katı Atık Aktarma İstasyonu ",
+      "lat": 40.86088235,
+      "lon": 29.34715122,
+      "total_waste_tonnes": 30617.18,
+      "total_trips": 4350,
+      "side": "Anadolu"
+    },
+    {
+      "node_id": "S9",
+      "name": "Şile Katı Atık Aktarma İstasyonu ",
+      "lat": 41.15313753,
+      "lon": 29.63946372,
+      "total_waste_tonnes": 1900.06,
+      "total_trips": 433,
+      "side": "Anadolu"
+    }
+  ],
+  "disposal_facilities": [
+    {
+      "node_id": "F1",
+      "name": "Odayeri Düzenli Depolama Alanı Tıbbi Atık Yakma Tesisi ",
+      "lat": 41.2161579991942,
+      "lon": 28.8545650003672,
+      "side": "Avrupa"
+    },
+    {
+      "node_id": "F2",
+      "name": "Kömürcüoda Düzenli Depolama Alanı",
+      "lat": 41.1508654587288,
+      "lon": 29.3692714005402,
+      "side": "Anadolu"
+    },
+    {
+      "node_id": "F3",
+      "name": "Odayeri Düzenli Depolama Alanı ",
+      "lat": 41.2127199994295,
+      "lon": 28.8577619995369,
+      "side": "Avrupa"
+    },
+    {
+      "node_id": "F4",
+      "name": "Kömürcüoda Endüstriyel Atık Tesisi ",
+      "lat": 41.1461847590375,
+      "lon": 29.3769867698783,
+      "side": "Anadolu"
+    },
+    {
+      "node_id": "F5",
+      "name": "Kömürcüoda Enerji Üretim (LFG) Tesisi",
+      "lat": 41.1457535289401,
+      "lon": 29.3774226299322,
+      "side": "Anadolu"
+    },
+    {
+      "node_id": "F6",
+      "name": "Hasdal Enerji Üretim Tesisi",
+      "lat": 41.1372243486914,
+      "lon": 28.9307905702657,
+      "side": "Avrupa"
+    },
+    {
+      "node_id": "F7",
+      "name": "Odayeri Enerji Üretim Tesisi ",
+      "lat": 41.2161889994851,
+      "lon": 28.8534840000917,
+      "side": "Avrupa"
+    },
+    {
+      "node_id": "F8",
+      "name": "Açık Kompost ve Geri Dönüşüm Tesisi ",
+      "lat": 41.1428449490565,
+      "lon": 29.3707492901884,
+      "side": "Anadolu"
+    },
+    {
+      "node_id": "F9",
+      "name": "Kompost Tesisi",
+      "lat": 41.2214989986859,
+      "lon": 28.8183579998198,
+      "side": "Avrupa"
+    }
+  ],
+  "fleet_2025": {
+    "asia": 43,
+    "europe": 39,
+    "total": 82
+  },
+  "alpha_r": {
+    "0": 1.4915,
+    "1": 1.4426,
+    "2": 1.3968,
+    "3": 1.4426,
+    "4": 1.4667,
+    "5": 1.4667,
+    "6": 1.5439,
+    "7": 1.6923,
+    "8": 1.7959,
+    "9": 1.6923,
+    "10": 1.7255,
+    "11": 1.7087,
+    "12": 1.7959,
+    "13": 1.7255,
+    "14": 1.7959,
+    "15": 1.8723,
+    "16": 1.8333,
+    "17": 1.913,
+    "18": 2.0,
+    "19": 1.8333,
+    "20": 1.6604,
+    "21": 1.5714,
+    "22": 1.5439,
+    "23": 1.4915
+  },
+  "v_free_kmh": 88.0
+}

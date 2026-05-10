@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_344488d8c269cd8972d8fe799c6655f3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_344488d8c269cd8972d8fe799c6655f3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_344488d8c269cd8972d8fe799c6655f3 = L.map(
+                "map_344488d8c269cd8972d8fe799c6655f3",
+                {
+                    center: [41.01, 28.95],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7afee99eac3a0d870a8f58d7c405857c = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7afee99eac3a0d870a8f58d7c405857c.addTo(map_344488d8c269cd8972d8fe799c6655f3);
+        
+    
+            var circle_marker_0c01f837dbbf1a30e536b793ceac789a = L.circleMarker(
+                [41.04899, 28.968704],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_344488d8c269cd8972d8fe799c6655f3);
+        
+    
+        var popup_fa0881cf942facc30b34023d7d3d56c1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_051c9fb8d061153ade6aa59e9b42dd08 = $(`<div id="html_051c9fb8d061153ade6aa59e9b42dd08" style="width: 100.0%; height: 100.0%;"><b>Baruthane Katı Atık Aktarma İstasyonu </b><br>Area: 6,000 m²</div>`)[0];
+                popup_fa0881cf942facc30b34023d7d3d56c1.setContent(html_051c9fb8d061153ade6aa59e9b42dd08);
+            
+        
+
+        circle_marker_0c01f837dbbf1a30e536b793ceac789a.bindPopup(popup_fa0881cf942facc30b34023d7d3d56c1)
+        ;
+
+        
+    
+    
+            var circle_marker_d898c80f1345e8849e30d7e5841c0401 = L.circleMarker(
+                [40.99794055, 28.82506594],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_344488d8c269cd8972d8fe799c6655f3);
+        
+    
+        var popup_8d042d31ca8a3d7a854fcb8535aaea75 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_883c1c0af40fdcb8c1f95f204da284dc = $(`<div id="html_883c1c0af40fdcb8c1f95f204da284dc" style="width: 100.0%; height: 100.0%;"><b>Yenibosna Katı Atık Aktarma İstasyonu </b><br>Area: 33,000 m²</div>`)[0];
+                popup_8d042d31ca8a3d7a854fcb8535aaea75.setContent(html_883c1c0af40fdcb8c1f95f204da284dc);
+            
+        
+
+        circle_marker_d898c80f1345e8849e30d7e5841c0401.bindPopup(popup_8d042d31ca8a3d7a854fcb8535aaea75)
+        ;
+
+        
+    
+    
+            var circle_marker_26f8b18ea2e768d37544da6cb64fd3be = L.circleMarker(
+                [41.146396, 28.778397],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_344488d8c269cd8972d8fe799c6655f3);
+        
+    
+        var popup_4977d0ca8b600d6b459fd7158d29acd0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_739acfe7003cdeeaa59a84ff522e5692 = $(`<div id="html_739acfe7003cdeeaa59a84ff522e5692" style="width: 100.0%; height: 100.0%;"><b>Başakşehir Katı Atık Aktarma İstasyonu </b><br>Area: 26,288 m²</div>`)[0];
+                popup_4977d0ca8b600d6b459fd7158d29acd0.setContent(html_739acfe7003cdeeaa59a84ff522e5692);
+            
+        
+
+        circle_marker_26f8b18ea2e768d37544da6cb64fd3be.bindPopup(popup_4977d0ca8b600d6b459fd7158d29acd0)
+        ;
+
+        
+    
+    
+            var circle_marker_29696db7bb876bf3a627e68a23f1fd87 = L.circleMarker(
+                [41.09103842, 28.29018384],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_344488d8c269cd8972d8fe799c6655f3);
+        
+    
+        var popup_0e40d718e4d573c6ed3fb7f16206d49f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8c5fbf1e20e2d9ced5c0938e921c4aa6 = $(`<div id="html_8c5fbf1e20e2d9ced5c0938e921c4aa6" style="width: 100.0%; height: 100.0%;"><b>Silivri Katı Atık Aktarma İstasyonu </b><br>Area: 11,950 m²</div>`)[0];
+                popup_0e40d718e4d573c6ed3fb7f16206d49f.setContent(html_8c5fbf1e20e2d9ced5c0938e921c4aa6);
+            
+        
+
+        circle_marker_29696db7bb876bf3a627e68a23f1fd87.bindPopup(popup_0e40d718e4d573c6ed3fb7f16206d49f)
+        ;
+
+        
+    
+    
+            var circle_marker_52ce12b2f5b15e6d7ef4e48abf2454b6 = L.circleMarker(
+                [41.13722435, 28.93079057],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_344488d8c269cd8972d8fe799c6655f3);
+        
+    
+        var popup_b49601506b40d01b4371b921cda255a4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f26dc81d9b7a423009586169e6237cff = $(`<div id="html_f26dc81d9b7a423009586169e6237cff" style="width: 100.0%; height: 100.0%;"><b>Hasdal Katı Atık Aktarma İstasyonu </b><br>Area: 27,000 m²</div>`)[0];
+                popup_b49601506b40d01b4371b921cda255a4.setContent(html_f26dc81d9b7a423009586169e6237cff);
+            
+        
+
+        circle_marker_52ce12b2f5b15e6d7ef4e48abf2454b6.bindPopup(popup_b49601506b40d01b4371b921cda255a4)
+        ;
+
+        
+    
+    
+            var circle_marker_89364aebbe7684352cd6e9e3d61596ee = L.circleMarker(
+                [40.98520513, 29.12996739],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_344488d8c269cd8972d8fe799c6655f3);
+        
+    
+        var popup_b1466e6e7173597edead5f51e8a1d8c0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_198c440e42255359a047af96d5a06e4e = $(`<div id="html_198c440e42255359a047af96d5a06e4e" style="width: 100.0%; height: 100.0%;"><b>Küçük Bakkalköy Katı Atık Aktarma İstasyonu </b><br>Area: 20,000 m²</div>`)[0];
+                popup_b1466e6e7173597edead5f51e8a1d8c0.setContent(html_198c440e42255359a047af96d5a06e4e);
+            
+        
+
+        circle_marker_89364aebbe7684352cd6e9e3d61596ee.bindPopup(popup_b1466e6e7173597edead5f51e8a1d8c0)
+        ;
+
+        
+    
+    
+            var circle_marker_8b1516b5db9ae44e20df1dbf26d54c07 = L.circleMarker(
+                [41.05831853, 29.11340743],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_344488d8c269cd8972d8fe799c6655f3);
+        
+    
+        var popup_1b9b5afabc3d885e7862a1c22ed57e64 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_88834907f87a6abe5e68b1b2a5920771 = $(`<div id="html_88834907f87a6abe5e68b1b2a5920771" style="width: 100.0%; height: 100.0%;"><b>Hekimbaşı Katı Atık Aktama İstasyonu </b><br>Area: 30,000 m²</div>`)[0];
+                popup_1b9b5afabc3d885e7862a1c22ed57e64.setContent(html_88834907f87a6abe5e68b1b2a5920771);
+            
+        
+
+        circle_marker_8b1516b5db9ae44e20df1dbf26d54c07.bindPopup(popup_1b9b5afabc3d885e7862a1c22ed57e64)
+        ;
+
+        
+    
+    
+            var circle_marker_e80a4955b9f98233c35c42f8677f21d5 = L.circleMarker(
+                [40.86088235, 29.34715122],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_344488d8c269cd8972d8fe799c6655f3);
+        
+    
+        var popup_0333e57eba7ff85e6b29fb692ccf407d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_984047c867eb9d82bcd4d969e3dd52b2 = $(`<div id="html_984047c867eb9d82bcd4d969e3dd52b2" style="width: 100.0%; height: 100.0%;"><b>Aydınlı Katı Atık Aktarma İstasyonu </b><br>Area: 48,000 m²</div>`)[0];
+                popup_0333e57eba7ff85e6b29fb692ccf407d.setContent(html_984047c867eb9d82bcd4d969e3dd52b2);
+            
+        
+
+        circle_marker_e80a4955b9f98233c35c42f8677f21d5.bindPopup(popup_0333e57eba7ff85e6b29fb692ccf407d)
+        ;
+
+        
+    
+    
+            var circle_marker_7cbf2525e7df125ca66928974e248371 = L.circleMarker(
+                [41.15313753, 29.63946372],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_344488d8c269cd8972d8fe799c6655f3);
+        
+    
+        var popup_5ebb035dfa3db81ea7134fff3e22c5aa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d2af9783a4808ef19963faea00b14aed = $(`<div id="html_d2af9783a4808ef19963faea00b14aed" style="width: 100.0%; height: 100.0%;"><b>Şile Katı Atık Aktarma İstasyonu </b><br>Area: 11,000 m²</div>`)[0];
+                popup_5ebb035dfa3db81ea7134fff3e22c5aa.setContent(html_d2af9783a4808ef19963faea00b14aed);
+            
+        
+
+        circle_marker_7cbf2525e7df125ca66928974e248371.bindPopup(popup_5ebb035dfa3db81ea7134fff3e22c5aa)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4266be64070c50eab55ad811fe630f8c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4266be64070c50eab55ad811fe630f8c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4266be64070c50eab55ad811fe630f8c = L.map(
+                "map_4266be64070c50eab55ad811fe630f8c",
+                {
+                    center: [41.01, 28.95],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6ddc2d37017a506b8bff1e2d7cbd1c88 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6ddc2d37017a506b8bff1e2d7cbd1c88.addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+            var circle_marker_f5f7b93e4d7b52273f827103a93d87d8 = L.circleMarker(
+                [41.04899, 28.968704],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_24bb7b0da0123967e21db2dee7b1d000 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_edab7bd36d7a5c9246b3fba51e25ad26 = $(`<div id="html_edab7bd36d7a5c9246b3fba51e25ad26" style="width: 100.0%; height: 100.0%;"><b>S1: Baruthane Katı Atık Aktarma İstasyonu </b><br>Demand: 92,017 t</div>`)[0];
+                popup_24bb7b0da0123967e21db2dee7b1d000.setContent(html_edab7bd36d7a5c9246b3fba51e25ad26);
+            
+        
+
+        circle_marker_f5f7b93e4d7b52273f827103a93d87d8.bindPopup(popup_24bb7b0da0123967e21db2dee7b1d000)
+        ;
+
+        
+    
+    
+            var circle_marker_0c69331e2e36f378d3a8b35627ef335d = L.circleMarker(
+                [40.99794055, 28.82506594],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_2333a4bfcb6a430a84fbdbd09314d3bf = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_017abdf5e761775a29701900fcbbf3bb = $(`<div id="html_017abdf5e761775a29701900fcbbf3bb" style="width: 100.0%; height: 100.0%;"><b>S2: Yenibosna Katı Atık Aktarma İstasyonu </b><br>Demand: 112,836 t</div>`)[0];
+                popup_2333a4bfcb6a430a84fbdbd09314d3bf.setContent(html_017abdf5e761775a29701900fcbbf3bb);
+            
+        
+
+        circle_marker_0c69331e2e36f378d3a8b35627ef335d.bindPopup(popup_2333a4bfcb6a430a84fbdbd09314d3bf)
+        ;
+
+        
+    
+    
+            var circle_marker_dbee4f71bd2714a88f9f2d9a7d95c980 = L.circleMarker(
+                [41.146396, 28.778397],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_f5d5cadd89611eb99713be585358abd2 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_4be07c9bf78531ecbd65cbb3eb936a51 = $(`<div id="html_4be07c9bf78531ecbd65cbb3eb936a51" style="width: 100.0%; height: 100.0%;"><b>S3: Başakşehir Katı Atık Aktarma İstasyonu </b><br>Demand: 18,331 t</div>`)[0];
+                popup_f5d5cadd89611eb99713be585358abd2.setContent(html_4be07c9bf78531ecbd65cbb3eb936a51);
+            
+        
+
+        circle_marker_dbee4f71bd2714a88f9f2d9a7d95c980.bindPopup(popup_f5d5cadd89611eb99713be585358abd2)
+        ;
+
+        
+    
+    
+            var circle_marker_8949186c5efd02605b659ca73c74682e = L.circleMarker(
+                [41.09103842, 28.29018384],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_8fe0363d09b7ee8147acc3fec5331f8c = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_27023cab9e6f330c26c95eca8c83e3de = $(`<div id="html_27023cab9e6f330c26c95eca8c83e3de" style="width: 100.0%; height: 100.0%;"><b>S4: Silivri Katı Atık Aktarma İstasyonu </b><br>Demand: 6,838 t</div>`)[0];
+                popup_8fe0363d09b7ee8147acc3fec5331f8c.setContent(html_27023cab9e6f330c26c95eca8c83e3de);
+            
+        
+
+        circle_marker_8949186c5efd02605b659ca73c74682e.bindPopup(popup_8fe0363d09b7ee8147acc3fec5331f8c)
+        ;
+
+        
+    
+    
+            var circle_marker_f226e5585eb6cee163ac0110ede4a05c = L.circleMarker(
+                [41.13722435, 28.93079057],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_7769ecb8b74bbe07b7fe5e27318d4f82 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_5a8f38fee50ad4c6c10375e6beed74c6 = $(`<div id="html_5a8f38fee50ad4c6c10375e6beed74c6" style="width: 100.0%; height: 100.0%;"><b>S5: Hasdal Katı Atık Aktarma İstasyonu </b><br>Demand: 25,427 t</div>`)[0];
+                popup_7769ecb8b74bbe07b7fe5e27318d4f82.setContent(html_5a8f38fee50ad4c6c10375e6beed74c6);
+            
+        
+
+        circle_marker_f226e5585eb6cee163ac0110ede4a05c.bindPopup(popup_7769ecb8b74bbe07b7fe5e27318d4f82)
+        ;
+
+        
+    
+    
+            var circle_marker_d74fd6be3229932753d55ae5a0ebfec2 = L.circleMarker(
+                [40.98520513, 29.12996739],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_25694a71160f79e178384a889a473958 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_4098602c5cd18b878a2b794fd9ecc9da = $(`<div id="html_4098602c5cd18b878a2b794fd9ecc9da" style="width: 100.0%; height: 100.0%;"><b>S6: Küçük Bakkalköy Katı Atık Aktarma İstasyonu </b><br>Demand: 75,808 t</div>`)[0];
+                popup_25694a71160f79e178384a889a473958.setContent(html_4098602c5cd18b878a2b794fd9ecc9da);
+            
+        
+
+        circle_marker_d74fd6be3229932753d55ae5a0ebfec2.bindPopup(popup_25694a71160f79e178384a889a473958)
+        ;
+
+        
+    
+    
+            var circle_marker_c4acb9ba2906d57e3f6fcc1dd995e668 = L.circleMarker(
+                [41.05831853, 29.11340743],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_ea12abb44dec4d8ea52111bab44083bb = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_bd9ff3fe9604ad6eaae2d7ba4a60424c = $(`<div id="html_bd9ff3fe9604ad6eaae2d7ba4a60424c" style="width: 100.0%; height: 100.0%;"><b>S7: Hekimbaşı Katı Atık Aktama İstasyonu </b><br>Demand: 9,170 t</div>`)[0];
+                popup_ea12abb44dec4d8ea52111bab44083bb.setContent(html_bd9ff3fe9604ad6eaae2d7ba4a60424c);
+            
+        
+
+        circle_marker_c4acb9ba2906d57e3f6fcc1dd995e668.bindPopup(popup_ea12abb44dec4d8ea52111bab44083bb)
+        ;
+
+        
+    
+    
+            var circle_marker_12ebc4bbc67225c79a7947f3b0899f06 = L.circleMarker(
+                [40.86088235, 29.34715122],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_703280b8e7d93a44e5a22804ab2860cc = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ef07fd03f5e3c2fd81574116a0571ec6 = $(`<div id="html_ef07fd03f5e3c2fd81574116a0571ec6" style="width: 100.0%; height: 100.0%;"><b>S8: Aydınlı Katı Atık Aktarma İstasyonu </b><br>Demand: 30,617 t</div>`)[0];
+                popup_703280b8e7d93a44e5a22804ab2860cc.setContent(html_ef07fd03f5e3c2fd81574116a0571ec6);
+            
+        
+
+        circle_marker_12ebc4bbc67225c79a7947f3b0899f06.bindPopup(popup_703280b8e7d93a44e5a22804ab2860cc)
+        ;
+
+        
+    
+    
+            var circle_marker_db8f2cd6044594a531ee7f5abcea4334 = L.circleMarker(
+                [41.15313753, 29.63946372],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_013792b6b0b40238fec6f573a5fdb4d9 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d5f7548c4c49f7b3f2031f801884486e = $(`<div id="html_d5f7548c4c49f7b3f2031f801884486e" style="width: 100.0%; height: 100.0%;"><b>S9: Şile Katı Atık Aktarma İstasyonu </b><br>Demand: 1,900 t</div>`)[0];
+                popup_013792b6b0b40238fec6f573a5fdb4d9.setContent(html_d5f7548c4c49f7b3f2031f801884486e);
+            
+        
+
+        circle_marker_db8f2cd6044594a531ee7f5abcea4334.bindPopup(popup_013792b6b0b40238fec6f573a5fdb4d9)
+        ;
+
+        
+    
+    
+            var circle_marker_18fcd11f0a5882b603e9b8819c55c7cc = L.circleMarker(
+                [41.2161579991942, 28.8545650003672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_bde86bc017b503be6bdad2c287a47996 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ccf722429a7c90207d6d4b3398cad032 = $(`<div id="html_ccf722429a7c90207d6d4b3398cad032" style="width: 100.0%; height: 100.0%;"><b>F1: Odayeri Düzenli Depolama Alanı Tıbbi Atık Yakma Tesisi </b><br>Type: Disposal Site (F)</div>`)[0];
+                popup_bde86bc017b503be6bdad2c287a47996.setContent(html_ccf722429a7c90207d6d4b3398cad032);
+            
+        
+
+        circle_marker_18fcd11f0a5882b603e9b8819c55c7cc.bindPopup(popup_bde86bc017b503be6bdad2c287a47996)
+        ;
+
+        
+    
+    
+            var circle_marker_2344d142ff835c0d0622e147451da33d = L.circleMarker(
+                [41.1508654587288, 29.3692714005402],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_97618c2d781a4a68bc746cea1785037e = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_969229a49d5e544cbb4fe30e151a6769 = $(`<div id="html_969229a49d5e544cbb4fe30e151a6769" style="width: 100.0%; height: 100.0%;"><b>F2: Kömürcüoda Düzenli Depolama Alanı</b><br>Type: Disposal Site (F)</div>`)[0];
+                popup_97618c2d781a4a68bc746cea1785037e.setContent(html_969229a49d5e544cbb4fe30e151a6769);
+            
+        
+
+        circle_marker_2344d142ff835c0d0622e147451da33d.bindPopup(popup_97618c2d781a4a68bc746cea1785037e)
+        ;
+
+        
+    
+    
+            var circle_marker_4df1f5de268f882442ba444f17805746 = L.circleMarker(
+                [41.2127199994295, 28.8577619995369],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_30024540550b8fcb1e984333613b69e0 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_dfbcbce1dbc5c405d397bbb74963c925 = $(`<div id="html_dfbcbce1dbc5c405d397bbb74963c925" style="width: 100.0%; height: 100.0%;"><b>F3: Odayeri Düzenli Depolama Alanı </b><br>Type: Disposal Site (F)</div>`)[0];
+                popup_30024540550b8fcb1e984333613b69e0.setContent(html_dfbcbce1dbc5c405d397bbb74963c925);
+            
+        
+
+        circle_marker_4df1f5de268f882442ba444f17805746.bindPopup(popup_30024540550b8fcb1e984333613b69e0)
+        ;
+
+        
+    
+    
+            var circle_marker_b0c5a781e0aa2843509cc8481118dfdf = L.circleMarker(
+                [41.1461847590375, 29.3769867698783],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_24cbce3839f4513562e8b9eb1b7d3e64 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ddb255f18668444d8fd57fbf7563ebac = $(`<div id="html_ddb255f18668444d8fd57fbf7563ebac" style="width: 100.0%; height: 100.0%;"><b>F4: Kömürcüoda Endüstriyel Atık Tesisi </b><br>Type: Industrial</div>`)[0];
+                popup_24cbce3839f4513562e8b9eb1b7d3e64.setContent(html_ddb255f18668444d8fd57fbf7563ebac);
+            
+        
+
+        circle_marker_b0c5a781e0aa2843509cc8481118dfdf.bindPopup(popup_24cbce3839f4513562e8b9eb1b7d3e64)
+        ;
+
+        
+    
+    
+            var circle_marker_952e8dea30f85d2e360013476957c107 = L.circleMarker(
+                [41.1457535289401, 29.3774226299322],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_05ee5c68db51109fdc155e28dafcfda3 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_356c7ad1f862e5df6114d2aa85685343 = $(`<div id="html_356c7ad1f862e5df6114d2aa85685343" style="width: 100.0%; height: 100.0%;"><b>F5: Kömürcüoda Enerji Üretim (LFG) Tesisi</b><br>Type: Energy/LFG (F)</div>`)[0];
+                popup_05ee5c68db51109fdc155e28dafcfda3.setContent(html_356c7ad1f862e5df6114d2aa85685343);
+            
+        
+
+        circle_marker_952e8dea30f85d2e360013476957c107.bindPopup(popup_05ee5c68db51109fdc155e28dafcfda3)
+        ;
+
+        
+    
+    
+            var circle_marker_5781b6f186ca3601781648303a5b1025 = L.circleMarker(
+                [41.1372243486914, 28.9307905702657],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_3106707771d51e4edf4bb0186d1f34e0 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_343eac7a11614c80265fab892a3c14c0 = $(`<div id="html_343eac7a11614c80265fab892a3c14c0" style="width: 100.0%; height: 100.0%;"><b>F6: Hasdal Enerji Üretim Tesisi</b><br>Type: Energy/LFG (F)</div>`)[0];
+                popup_3106707771d51e4edf4bb0186d1f34e0.setContent(html_343eac7a11614c80265fab892a3c14c0);
+            
+        
+
+        circle_marker_5781b6f186ca3601781648303a5b1025.bindPopup(popup_3106707771d51e4edf4bb0186d1f34e0)
+        ;
+
+        
+    
+    
+            var circle_marker_2276d81f213b235eb49d672c3e688b14 = L.circleMarker(
+                [41.2161889994851, 28.8534840000917],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_bee0b2139d212e66d2e5d39258bc80c7 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2497495a92caafcb6c123f620ed4349b = $(`<div id="html_2497495a92caafcb6c123f620ed4349b" style="width: 100.0%; height: 100.0%;"><b>F7: Odayeri Enerji Üretim Tesisi </b><br>Type: Energy/LFG (F)</div>`)[0];
+                popup_bee0b2139d212e66d2e5d39258bc80c7.setContent(html_2497495a92caafcb6c123f620ed4349b);
+            
+        
+
+        circle_marker_2276d81f213b235eb49d672c3e688b14.bindPopup(popup_bee0b2139d212e66d2e5d39258bc80c7)
+        ;
+
+        
+    
+    
+            var circle_marker_c1e13ae865e2c1a6b2737b58a3703725 = L.circleMarker(
+                [41.1428449490565, 29.3707492901884],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_d42eb48509eaed8845a5f2579934c744 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_c96a4a634cb805d612a6aaad240bc0ea = $(`<div id="html_c96a4a634cb805d612a6aaad240bc0ea" style="width: 100.0%; height: 100.0%;"><b>F8: Açık Kompost ve Geri Dönüşüm Tesisi </b><br>Type: Composting (F)</div>`)[0];
+                popup_d42eb48509eaed8845a5f2579934c744.setContent(html_c96a4a634cb805d612a6aaad240bc0ea);
+            
+        
+
+        circle_marker_c1e13ae865e2c1a6b2737b58a3703725.bindPopup(popup_d42eb48509eaed8845a5f2579934c744)
+        ;
+
+        
+    
+    
+            var circle_marker_29ceb4459176d641c18c03dc8bca2ea7 = L.circleMarker(
+                [41.2214989986859, 28.8183579998198],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4266be64070c50eab55ad811fe630f8c);
+        
+    
+        var popup_d48c5cd190cad269a6253046ccca1e65 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ad86c96b0191b5e2fecf994688def3d2 = $(`<div id="html_ad86c96b0191b5e2fecf994688def3d2" style="width: 100.0%; height: 100.0%;"><b>F9: Kompost Tesisi</b><br>Type: Composting (F)</div>`)[0];
+                popup_d48c5cd190cad269a6253046ccca1e65.setContent(html_ad86c96b0191b5e2fecf994688def3d2);
+            
+        
+
+        circle_marker_29ceb4459176d641c18c03dc8bca2ea7.bindPopup(popup_d48c5cd190cad269a6253046ccca1e65)
+        ;
+
+        
+    
+    
+            var tile_layer_f7c13c8ffc4b16505f3dd5a8d40d8d91 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_2564522fbb9b9f5bf2ea1e5dd583b924 = new L.Control.MiniMap(
+                tile_layer_f7c13c8ffc4b16505f3dd5a8d40d8d91,
+                {
+  "position": "bottomright",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": false,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_4266be64070c50eab55ad811fe630f8c.addControl(mini_map_2564522fbb9b9f5bf2ea1e5dd583b924);
+        
+</script>
+</html>

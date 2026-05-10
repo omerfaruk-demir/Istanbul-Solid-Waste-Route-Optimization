@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4159807e5fd3686f163bdbab4a3e371d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4159807e5fd3686f163bdbab4a3e371d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4159807e5fd3686f163bdbab4a3e371d = L.map(
+                "map_4159807e5fd3686f163bdbab4a3e371d",
+                {
+                    center: [41.01, 28.95],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_54758adc7baa3f059bcb24dac183ff48 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_54758adc7baa3f059bcb24dac183ff48.addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+            var circle_marker_89336157611914dd1fbede46d7579088 = L.circleMarker(
+                [40.9970129986921, 28.8254799997465],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_aea72b864a8a3b33ad7a58b9557db9c0 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_9c7f401699b726b48f453a13fff24a39 = $(`<div id="html_9c7f401699b726b48f453a13fff24a39" style="width: 100.0%; height: 100.0%;"><b>Elektronik Atık İşleme ve Geri Kazanım Tesisi </b><br>Type: E-Waste<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_aea72b864a8a3b33ad7a58b9557db9c0.setContent(html_9c7f401699b726b48f453a13fff24a39);
+            
+        
+
+        circle_marker_89336157611914dd1fbede46d7579088.bindPopup(popup_aea72b864a8a3b33ad7a58b9557db9c0)
+        ;
+
+        
+    
+    
+            var circle_marker_d12c67c05f74926fcfdd2f3d717e2a81 = L.circleMarker(
+                [40.9344252894451, 29.155083599478],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_2473e7417a6b08a19da2d1947092318c = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_171156b42e56379c33caf3c63be5bc00 = $(`<div id="html_171156b42e56379c33caf3c63be5bc00" style="width: 100.0%; height: 100.0%;"><b>Maltepe Hizmet Birimi </b><br>Type: Service Unit<br>Region: Anadolu<br>Status: Mevcut</div>`)[0];
+                popup_2473e7417a6b08a19da2d1947092318c.setContent(html_171156b42e56379c33caf3c63be5bc00);
+            
+        
+
+        circle_marker_d12c67c05f74926fcfdd2f3d717e2a81.bindPopup(popup_2473e7417a6b08a19da2d1947092318c)
+        ;
+
+        
+    
+    
+            var circle_marker_fa2771acd880b19ca029aae965d04102 = L.circleMarker(
+                [41.2161579991942, 28.8545650003672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_03459d708268e184279c34670dda22f4 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_f9a7690bf433f7df04b5e6abd04bce27 = $(`<div id="html_f9a7690bf433f7df04b5e6abd04bce27" style="width: 100.0%; height: 100.0%;"><b>Odayeri Düzenli Depolama Alanı Tıbbi Atık Yakma Tesisi </b><br>Type: Disposal Site (F)<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_03459d708268e184279c34670dda22f4.setContent(html_f9a7690bf433f7df04b5e6abd04bce27);
+            
+        
+
+        circle_marker_fa2771acd880b19ca029aae965d04102.bindPopup(popup_03459d708268e184279c34670dda22f4)
+        ;
+
+        
+    
+    
+            var circle_marker_5c039b548eafb3502f70da6ecb8081d1 = L.circleMarker(
+                [41.0910384187238, 28.2901838395005],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_b2b388c91df8789dc29947e0c8784aec = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_80999e7628ad90d38f1100e96c9e1a34 = $(`<div id="html_80999e7628ad90d38f1100e96c9e1a34" style="width: 100.0%; height: 100.0%;"><b>Silivri Katı Atık Aktarma İstasyonu</b><br>Type: Transfer Station (S)<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_b2b388c91df8789dc29947e0c8784aec.setContent(html_80999e7628ad90d38f1100e96c9e1a34);
+            
+        
+
+        circle_marker_5c039b548eafb3502f70da6ecb8081d1.bindPopup(popup_b2b388c91df8789dc29947e0c8784aec)
+        ;
+
+        
+    
+    
+            var circle_marker_3eb57d9be90ca4c988ed97c1e8c6e12a = L.circleMarker(
+                [40.8608823494234, 29.3471512196003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_e5919c8c2ac58fa1ffeecbb8336691c2 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_475329126b2a2a06ff2efc48a5f80050 = $(`<div id="html_475329126b2a2a06ff2efc48a5f80050" style="width: 100.0%; height: 100.0%;"><b>Aydınlı Katı Atık Aktarma İstasyonu</b><br>Type: Transfer Station (S)<br>Region: Anadolu<br>Status: Mevcut</div>`)[0];
+                popup_e5919c8c2ac58fa1ffeecbb8336691c2.setContent(html_475329126b2a2a06ff2efc48a5f80050);
+            
+        
+
+        circle_marker_3eb57d9be90ca4c988ed97c1e8c6e12a.bindPopup(popup_e5919c8c2ac58fa1ffeecbb8336691c2)
+        ;
+
+        
+    
+    
+            var circle_marker_92dd3208a8d6f2194df2013f31e2ca14 = L.circleMarker(
+                [41.1508654587288, 29.3692714005402],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_8b9faf862b56e18177b831a5b3379a7d = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_01bb80fb8b27d7b1b88c7a43599ee915 = $(`<div id="html_01bb80fb8b27d7b1b88c7a43599ee915" style="width: 100.0%; height: 100.0%;"><b>Kömürcüoda Düzenli Depolama Alanı</b><br>Type: Disposal Site (F)<br>Region: Anadolu<br>Status: Mevcut</div>`)[0];
+                popup_8b9faf862b56e18177b831a5b3379a7d.setContent(html_01bb80fb8b27d7b1b88c7a43599ee915);
+            
+        
+
+        circle_marker_92dd3208a8d6f2194df2013f31e2ca14.bindPopup(popup_8b9faf862b56e18177b831a5b3379a7d)
+        ;
+
+        
+    
+    
+            var circle_marker_5c9ecae906912ba4b29684e0052cb6ab = L.circleMarker(
+                [41.0573148489299, 29.1057799005654],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_7451df1b5227e5545b1ea62e6aa7cc1b = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_ad0b170b1fd7c6b8b293f52432218b21 = $(`<div id="html_ad0b170b1fd7c6b8b293f52432218b21" style="width: 100.0%; height: 100.0%;"><b>Ümraniye Hizmet Birimi</b><br>Type: Service Unit<br>Region: Anadolu<br>Status: Mevcut</div>`)[0];
+                popup_7451df1b5227e5545b1ea62e6aa7cc1b.setContent(html_ad0b170b1fd7c6b8b293f52432218b21);
+            
+        
+
+        circle_marker_5c9ecae906912ba4b29684e0052cb6ab.bindPopup(popup_7451df1b5227e5545b1ea62e6aa7cc1b)
+        ;
+
+        
+    
+    
+            var circle_marker_a6c11bacdbdb6ed67ab386b0c0f09b06 = L.circleMarker(
+                [41.0918899991622, 28.8873780001592],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_c58970cfae3fffa876e40313a8aa822f = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_4e5a4c7a266aa400b443c7f3e2c6c206 = $(`<div id="html_4e5a4c7a266aa400b443c7f3e2c6c206" style="width: 100.0%; height: 100.0%;"><b>Gaziosmanpaşa Hizmet Birimi</b><br>Type: Service Unit<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_c58970cfae3fffa876e40313a8aa822f.setContent(html_4e5a4c7a266aa400b443c7f3e2c6c206);
+            
+        
+
+        circle_marker_a6c11bacdbdb6ed67ab386b0c0f09b06.bindPopup(popup_c58970cfae3fffa876e40313a8aa822f)
+        ;
+
+        
+    
+    
+            var circle_marker_abff3e6825f294c70d8d071a2b681266 = L.circleMarker(
+                [41.2127199994295, 28.8577619995369],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_9e5b418fbd94caf09aa2c10b5c47cd72 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_39a4d9566cbb0a2e8d78888b2f4164fc = $(`<div id="html_39a4d9566cbb0a2e8d78888b2f4164fc" style="width: 100.0%; height: 100.0%;"><b>Odayeri Düzenli Depolama Alanı </b><br>Type: Disposal Site (F)<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_9e5b418fbd94caf09aa2c10b5c47cd72.setContent(html_39a4d9566cbb0a2e8d78888b2f4164fc);
+            
+        
+
+        circle_marker_abff3e6825f294c70d8d071a2b681266.bindPopup(popup_9e5b418fbd94caf09aa2c10b5c47cd72)
+        ;
+
+        
+    
+    
+            var circle_marker_6e034ae2717747ffe8a6190cf0e79994 = L.circleMarker(
+                [41.1461847590375, 29.3769867698783],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_0cd3cb44d08e8e58b40c9d8af2e26a43 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_15f8f44144298f36ad7061d2f9c33f61 = $(`<div id="html_15f8f44144298f36ad7061d2f9c33f61" style="width: 100.0%; height: 100.0%;"><b>Kömürcüoda Endüstriyel Atık Tesisi </b><br>Type: Industrial<br>Region: Anadolu<br>Status: Mevcut</div>`)[0];
+                popup_0cd3cb44d08e8e58b40c9d8af2e26a43.setContent(html_15f8f44144298f36ad7061d2f9c33f61);
+            
+        
+
+        circle_marker_6e034ae2717747ffe8a6190cf0e79994.bindPopup(popup_0cd3cb44d08e8e58b40c9d8af2e26a43)
+        ;
+
+        
+    
+    
+            var circle_marker_91c33b97f5f9f23847420ed073153d1d = L.circleMarker(
+                [40.9968089989243, 28.8251680001846],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_9e738f272656b0ee19610fbc3ca5bef4 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_0e3849efa3c424eb5015a3fb3184ea95 = $(`<div id="html_0e3849efa3c424eb5015a3fb3184ea95" style="width: 100.0%; height: 100.0%;"><b>Yenibosna Hizmet Birimi </b><br>Type: Service Unit<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_9e738f272656b0ee19610fbc3ca5bef4.setContent(html_0e3849efa3c424eb5015a3fb3184ea95);
+            
+        
+
+        circle_marker_91c33b97f5f9f23847420ed073153d1d.bindPopup(popup_9e738f272656b0ee19610fbc3ca5bef4)
+        ;
+
+        
+    
+    
+            var circle_marker_45a50d63b97f828291714954a49b75fe = L.circleMarker(
+                [41.1457535289401, 29.3774226299322],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_b5b92e86ca887010fa09a0606ccd3c39 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_9d3170fe07af8c43492a8696e89c52ac = $(`<div id="html_9d3170fe07af8c43492a8696e89c52ac" style="width: 100.0%; height: 100.0%;"><b>Kömürcüoda Enerji Üretim (LFG) Tesisi</b><br>Type: Energy/LFG (F)<br>Region: Anadolu<br>Status: Mevcut</div>`)[0];
+                popup_b5b92e86ca887010fa09a0606ccd3c39.setContent(html_9d3170fe07af8c43492a8696e89c52ac);
+            
+        
+
+        circle_marker_45a50d63b97f828291714954a49b75fe.bindPopup(popup_b5b92e86ca887010fa09a0606ccd3c39)
+        ;
+
+        
+    
+    
+            var circle_marker_c7930a4c0feada91ead717a9768cd159 = L.circleMarker(
+                [41.0406779992191, 28.9938199996169],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_6f1e39fcd860e4ca6b2150e1318a55dd = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_0a65588f8256ebd46f895e4468a163b1 = $(`<div id="html_0a65588f8256ebd46f895e4468a163b1" style="width: 100.0%; height: 100.0%;"><b>Dolmabahçe Hizmet Birimi</b><br>Type: Service Unit<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_6f1e39fcd860e4ca6b2150e1318a55dd.setContent(html_0a65588f8256ebd46f895e4468a163b1);
+            
+        
+
+        circle_marker_c7930a4c0feada91ead717a9768cd159.bindPopup(popup_6f1e39fcd860e4ca6b2150e1318a55dd)
+        ;
+
+        
+    
+    
+            var circle_marker_0b3546b3a7b2598e42cd45e65a56e0df = L.circleMarker(
+                [41.0583185290947, 29.1134074295466],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_d480a02886de201efde71b60232a60cb = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_b19c7f71d78d28b2ed1c25a2a0581191 = $(`<div id="html_b19c7f71d78d28b2ed1c25a2a0581191" style="width: 100.0%; height: 100.0%;"><b>Hekimbaşı Katı Atık Aktama İstasyonu </b><br>Type: Other<br>Region: Anadolu<br>Status: Mevcut</div>`)[0];
+                popup_d480a02886de201efde71b60232a60cb.setContent(html_b19c7f71d78d28b2ed1c25a2a0581191);
+            
+        
+
+        circle_marker_0b3546b3a7b2598e42cd45e65a56e0df.bindPopup(popup_d480a02886de201efde71b60232a60cb)
+        ;
+
+        
+    
+    
+            var circle_marker_f0e76fca76de693f3ab02277170eed4e = L.circleMarker(
+                [41.0051680992884, 29.2639611695787],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_b0bf8a8cdedf4f737250243cc4bbe622 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_4c0a9244461cd8dfd44b85331e0c114a = $(`<div id="html_4c0a9244461cd8dfd44b85331e0c114a" style="width: 100.0%; height: 100.0%;"><b>Sancaktepe Aktarma İstasyonu</b><br>Type: Transfer Station (S)<br>Region: Anadolu<br>Status: Proje</div>`)[0];
+                popup_b0bf8a8cdedf4f737250243cc4bbe622.setContent(html_4c0a9244461cd8dfd44b85331e0c114a);
+            
+        
+
+        circle_marker_f0e76fca76de693f3ab02277170eed4e.bindPopup(popup_b0bf8a8cdedf4f737250243cc4bbe622)
+        ;
+
+        
+    
+    
+            var circle_marker_c0443398cbe11ae00d37cf78f349bb3c = L.circleMarker(
+                [41.1372243486914, 28.9307905702657],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_22278d790c4fce232d9ba06e59b93632 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_b418809c66c4dff5b73fb80db69e9819 = $(`<div id="html_b418809c66c4dff5b73fb80db69e9819" style="width: 100.0%; height: 100.0%;"><b>Hasdal Enerji Üretim Tesisi</b><br>Type: Energy/LFG (F)<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_22278d790c4fce232d9ba06e59b93632.setContent(html_b418809c66c4dff5b73fb80db69e9819);
+            
+        
+
+        circle_marker_c0443398cbe11ae00d37cf78f349bb3c.bindPopup(popup_22278d790c4fce232d9ba06e59b93632)
+        ;
+
+        
+    
+    
+            var circle_marker_024c47171b29113e780b1dd18d3c1523 = L.circleMarker(
+                [41.0300459994223, 28.9296020003827],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_2fdd9b4c310bebb78d45237e33035202 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_618ec94a83f65d4a0d82cd29b5ce0f6b = $(`<div id="html_618ec94a83f65d4a0d82cd29b5ce0f6b" style="width: 100.0%; height: 100.0%;"><b>Edirnekapı Hizmet Birimi </b><br>Type: Service Unit<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_2fdd9b4c310bebb78d45237e33035202.setContent(html_618ec94a83f65d4a0d82cd29b5ce0f6b);
+            
+        
+
+        circle_marker_024c47171b29113e780b1dd18d3c1523.bindPopup(popup_2fdd9b4c310bebb78d45237e33035202)
+        ;
+
+        
+    
+    
+            var circle_marker_aaff61e256ab614be423f5250ab6a494 = L.circleMarker(
+                [41.0389079990667, 28.9715250005473],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_d89fc78dffe282a44c8eca6b8175fe5a = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_6183f8ee60cb07c9ded225e96f6cdbf2 = $(`<div id="html_6183f8ee60cb07c9ded225e96f6cdbf2" style="width: 100.0%; height: 100.0%;"><b>İBB Atık Yönetimi Müdürlüğü İBB Beyoğlu Ek Hizmet Binası </b><br>Type: Service Unit<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_d89fc78dffe282a44c8eca6b8175fe5a.setContent(html_6183f8ee60cb07c9ded225e96f6cdbf2);
+            
+        
+
+        circle_marker_aaff61e256ab614be423f5250ab6a494.bindPopup(popup_d89fc78dffe282a44c8eca6b8175fe5a)
+        ;
+
+        
+    
+    
+            var circle_marker_880c43c62fb637d318d66187f4361cf7 = L.circleMarker(
+                [41.2161889994851, 28.8534840000917],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_c64997b0b88a9b7e71bf5bb0df7a76a0 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_15c5d6310543d89745e17e81b35e8cd0 = $(`<div id="html_15c5d6310543d89745e17e81b35e8cd0" style="width: 100.0%; height: 100.0%;"><b>Odayeri Enerji Üretim Tesisi </b><br>Type: Energy/LFG (F)<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_c64997b0b88a9b7e71bf5bb0df7a76a0.setContent(html_15c5d6310543d89745e17e81b35e8cd0);
+            
+        
+
+        circle_marker_880c43c62fb637d318d66187f4361cf7.bindPopup(popup_c64997b0b88a9b7e71bf5bb0df7a76a0)
+        ;
+
+        
+    
+    
+            var circle_marker_573e19b2f4db2e21665cc93f391b59cf = L.circleMarker(
+                [41.1428449490565, 29.3707492901884],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_0e918b9676d070bd6df1fcca6555af0a = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_55da7d858447591d737d18435d6db36e = $(`<div id="html_55da7d858447591d737d18435d6db36e" style="width: 100.0%; height: 100.0%;"><b>Açık Kompost ve Geri Dönüşüm Tesisi </b><br>Type: Composting (F)<br>Region: Anadolu<br>Status: Mevcut</div>`)[0];
+                popup_0e918b9676d070bd6df1fcca6555af0a.setContent(html_55da7d858447591d737d18435d6db36e);
+            
+        
+
+        circle_marker_573e19b2f4db2e21665cc93f391b59cf.bindPopup(popup_0e918b9676d070bd6df1fcca6555af0a)
+        ;
+
+        
+    
+    
+            var circle_marker_4c30803cabedd3ac68c9e671aa48fb42 = L.circleMarker(
+                [41.0489899987435, 28.9687040003943],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_a9b171c4f5d45a88fc72f142efe95869 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_d3d0cf47ada851da4caeb732b2c9bfde = $(`<div id="html_d3d0cf47ada851da4caeb732b2c9bfde" style="width: 100.0%; height: 100.0%;"><b>Baruthane Katı Atık Aktarma İstasyonu</b><br>Type: Transfer Station (S)<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_a9b171c4f5d45a88fc72f142efe95869.setContent(html_d3d0cf47ada851da4caeb732b2c9bfde);
+            
+        
+
+        circle_marker_4c30803cabedd3ac68c9e671aa48fb42.bindPopup(popup_a9b171c4f5d45a88fc72f142efe95869)
+        ;
+
+        
+    
+    
+            var circle_marker_a20c339e9575c0ed6d025ab78df25c6c = L.circleMarker(
+                [41.2214989986859, 28.8183579998198],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_576642801b96c1586f21434da6b9e3a2 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_2f37c52b80862d4808454602dd5c1af6 = $(`<div id="html_2f37c52b80862d4808454602dd5c1af6" style="width: 100.0%; height: 100.0%;"><b>Kompost Tesisi</b><br>Type: Composting (F)<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_576642801b96c1586f21434da6b9e3a2.setContent(html_2f37c52b80862d4808454602dd5c1af6);
+            
+        
+
+        circle_marker_a20c339e9575c0ed6d025ab78df25c6c.bindPopup(popup_576642801b96c1586f21434da6b9e3a2)
+        ;
+
+        
+    
+    
+            var circle_marker_4606cac038517ccd78c6fa73aef2d9e1 = L.circleMarker(
+                [41.0335342292881, 28.6313501005367],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_514e10f932f2653f5cb50bc3900ffeee = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_523b1637e3c2c9a6b2da149e05020311 = $(`<div id="html_523b1637e3c2c9a6b2da149e05020311" style="width: 100.0%; height: 100.0%;"><b>KıraçHizmet Birimi </b><br>Type: Service Unit<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_514e10f932f2653f5cb50bc3900ffeee.setContent(html_523b1637e3c2c9a6b2da149e05020311);
+            
+        
+
+        circle_marker_4606cac038517ccd78c6fa73aef2d9e1.bindPopup(popup_514e10f932f2653f5cb50bc3900ffeee)
+        ;
+
+        
+    
+    
+            var circle_marker_bd9194a0b72c8ab7c744e26e79ccd69f = L.circleMarker(
+                [40.9852051289414, 29.1299673906002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_f76ff9462d6e311c4ecbfba392d96a09 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_ab4b9e12e487ca5aa3f31ff0b8f94511 = $(`<div id="html_ab4b9e12e487ca5aa3f31ff0b8f94511" style="width: 100.0%; height: 100.0%;"><b>Bakkalköy Katı Atık Aktarma İstasyonu </b><br>Type: Transfer Station (S)<br>Region: Anadolu<br>Status: Mevcut</div>`)[0];
+                popup_f76ff9462d6e311c4ecbfba392d96a09.setContent(html_ab4b9e12e487ca5aa3f31ff0b8f94511);
+            
+        
+
+        circle_marker_bd9194a0b72c8ab7c744e26e79ccd69f.bindPopup(popup_f76ff9462d6e311c4ecbfba392d96a09)
+        ;
+
+        
+    
+    
+            var circle_marker_1a9a484c77d7c96a9e477b00f920a615 = L.circleMarker(
+                [40.9979405492631, 28.8250659402433],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_6b0c94b2b758ecbea8b486a090af40c0 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_126930ead9a791a6a6089bddf633d6ae = $(`<div id="html_126930ead9a791a6a6089bddf633d6ae" style="width: 100.0%; height: 100.0%;"><b>Yenibosna Katı Atık Aktarma İstasyonu</b><br>Type: Transfer Station (S)<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_6b0c94b2b758ecbea8b486a090af40c0.setContent(html_126930ead9a791a6a6089bddf633d6ae);
+            
+        
+
+        circle_marker_1a9a484c77d7c96a9e477b00f920a615.bindPopup(popup_6b0c94b2b758ecbea8b486a090af40c0)
+        ;
+
+        
+    
+    
+            var circle_marker_6f351d5712a8da98e4a6d483c0c62888 = L.circleMarker(
+                [41.0433098889208, 28.7624511097362],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_76f6f640b93abc334d29e51a05240dd9 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_d3dd76ed9b45471c04cdfd71b78a8ff7 = $(`<div id="html_d3dd76ed9b45471c04cdfd71b78a8ff7" style="width: 100.0%; height: 100.0%;"><b>Halkalı Katı Atık Aktarma İstasyonu</b><br>Type: Transfer Station (S)<br>Region: Avrupa<br>Status: Mevcut</div>`)[0];
+                popup_76f6f640b93abc334d29e51a05240dd9.setContent(html_d3dd76ed9b45471c04cdfd71b78a8ff7);
+            
+        
+
+        circle_marker_6f351d5712a8da98e4a6d483c0c62888.bindPopup(popup_76f6f640b93abc334d29e51a05240dd9)
+        ;
+
+        
+    
+    
+            var circle_marker_36f4a8e3dac0f489388ab894cc0aba12 = L.circleMarker(
+                [41.1531375293419, 29.6394637205028],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+        var popup_db09860c3b5e9237408b40641fade7ab = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_e13a1688ccf8b105204d30489a6f2bab = $(`<div id="html_e13a1688ccf8b105204d30489a6f2bab" style="width: 100.0%; height: 100.0%;"><b>Şile Katı Atık Aktarma İstasyonu</b><br>Type: Transfer Station (S)<br>Region: Anadolu<br>Status: Mevcut</div>`)[0];
+                popup_db09860c3b5e9237408b40641fade7ab.setContent(html_e13a1688ccf8b105204d30489a6f2bab);
+            
+        
+
+        circle_marker_36f4a8e3dac0f489388ab894cc0aba12.bindPopup(popup_db09860c3b5e9237408b40641fade7ab)
+        ;
+
+        
+    
+    
+            var marker_8adf6332676f2d2f78ed106b3d20fe51 = L.marker(
+                [41.04899, 28.968704],
+                {
+}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+            var icon_d9ac0a84a76b63c8ebe7332080dc4601 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b4e2de52357e64a5e0a61abe5e15d6d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8b407517e1f1c49788cb0f81fdee433a = $(`<div id="html_8b407517e1f1c49788cb0f81fdee433a" style="width: 100.0%; height: 100.0%;"><b>[xlsx] Baruthane Katı Atık Aktarma İstasyonu </b></div>`)[0];
+                popup_5b4e2de52357e64a5e0a61abe5e15d6d.setContent(html_8b407517e1f1c49788cb0f81fdee433a);
+            
+        
+
+        marker_8adf6332676f2d2f78ed106b3d20fe51.bindPopup(popup_5b4e2de52357e64a5e0a61abe5e15d6d)
+        ;
+
+        
+    
+    
+                marker_8adf6332676f2d2f78ed106b3d20fe51.setIcon(icon_d9ac0a84a76b63c8ebe7332080dc4601);
+            
+    
+            var marker_d274e542fa9479ced1ff581f069b6a07 = L.marker(
+                [40.99794055, 28.82506594],
+                {
+}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+            var icon_e52034ebf045118ef97449653e4ca408 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd9815cc862bad48f460a7dcffc78e51 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ad897fed0fff8181b11482f8f4899afc = $(`<div id="html_ad897fed0fff8181b11482f8f4899afc" style="width: 100.0%; height: 100.0%;"><b>[xlsx] Yenibosna Katı Atık Aktarma İstasyonu </b></div>`)[0];
+                popup_cd9815cc862bad48f460a7dcffc78e51.setContent(html_ad897fed0fff8181b11482f8f4899afc);
+            
+        
+
+        marker_d274e542fa9479ced1ff581f069b6a07.bindPopup(popup_cd9815cc862bad48f460a7dcffc78e51)
+        ;
+
+        
+    
+    
+                marker_d274e542fa9479ced1ff581f069b6a07.setIcon(icon_e52034ebf045118ef97449653e4ca408);
+            
+    
+            var marker_11af4b000967d4c6e5763f7b2e1f2335 = L.marker(
+                [41.146396, 28.778397],
+                {
+}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+            var icon_eab717e4409d2ad19b7e5e80452a9817 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d286fedcbdafea9deb90e33e82bf5442 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2773d60a1fc7bd52d7feada204bc8bd2 = $(`<div id="html_2773d60a1fc7bd52d7feada204bc8bd2" style="width: 100.0%; height: 100.0%;"><b>[xlsx] Başakşehir Katı Atık Aktarma İstasyonu </b></div>`)[0];
+                popup_d286fedcbdafea9deb90e33e82bf5442.setContent(html_2773d60a1fc7bd52d7feada204bc8bd2);
+            
+        
+
+        marker_11af4b000967d4c6e5763f7b2e1f2335.bindPopup(popup_d286fedcbdafea9deb90e33e82bf5442)
+        ;
+
+        
+    
+    
+                marker_11af4b000967d4c6e5763f7b2e1f2335.setIcon(icon_eab717e4409d2ad19b7e5e80452a9817);
+            
+    
+            var marker_e1c7a3efcbeb1ac0a6a43011d461aae7 = L.marker(
+                [41.09103842, 28.29018384],
+                {
+}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+            var icon_15de0df70e27feddadb6508b2753749c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c97ba77dd5143f88011fe5cc545d9cc3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_98bd490a69b397efba80e60a379786da = $(`<div id="html_98bd490a69b397efba80e60a379786da" style="width: 100.0%; height: 100.0%;"><b>[xlsx] Silivri Katı Atık Aktarma İstasyonu </b></div>`)[0];
+                popup_c97ba77dd5143f88011fe5cc545d9cc3.setContent(html_98bd490a69b397efba80e60a379786da);
+            
+        
+
+        marker_e1c7a3efcbeb1ac0a6a43011d461aae7.bindPopup(popup_c97ba77dd5143f88011fe5cc545d9cc3)
+        ;
+
+        
+    
+    
+                marker_e1c7a3efcbeb1ac0a6a43011d461aae7.setIcon(icon_15de0df70e27feddadb6508b2753749c);
+            
+    
+            var marker_de8589d50184301cdd764069083e9fc5 = L.marker(
+                [41.13722435, 28.93079057],
+                {
+}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+            var icon_14cec0f4566b50885802a98ceae840cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92c9f64adc633b4bcc7ada860507e31f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7a9361fb2bf2f788de87b0bd0f1db8f3 = $(`<div id="html_7a9361fb2bf2f788de87b0bd0f1db8f3" style="width: 100.0%; height: 100.0%;"><b>[xlsx] Hasdal Katı Atık Aktarma İstasyonu </b></div>`)[0];
+                popup_92c9f64adc633b4bcc7ada860507e31f.setContent(html_7a9361fb2bf2f788de87b0bd0f1db8f3);
+            
+        
+
+        marker_de8589d50184301cdd764069083e9fc5.bindPopup(popup_92c9f64adc633b4bcc7ada860507e31f)
+        ;
+
+        
+    
+    
+                marker_de8589d50184301cdd764069083e9fc5.setIcon(icon_14cec0f4566b50885802a98ceae840cd);
+            
+    
+            var marker_b7c71b1158e4abc0b8cb3c98645c96d2 = L.marker(
+                [40.98520513, 29.12996739],
+                {
+}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+            var icon_1f2c1f4181fe8e24d25773eea9916de8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d8422c3b017472b97a3307d1ffed427 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4c11a27ad068818feadd01b29881e559 = $(`<div id="html_4c11a27ad068818feadd01b29881e559" style="width: 100.0%; height: 100.0%;"><b>[xlsx] Küçük Bakkalköy Katı Atık Aktarma İstasyonu </b></div>`)[0];
+                popup_7d8422c3b017472b97a3307d1ffed427.setContent(html_4c11a27ad068818feadd01b29881e559);
+            
+        
+
+        marker_b7c71b1158e4abc0b8cb3c98645c96d2.bindPopup(popup_7d8422c3b017472b97a3307d1ffed427)
+        ;
+
+        
+    
+    
+                marker_b7c71b1158e4abc0b8cb3c98645c96d2.setIcon(icon_1f2c1f4181fe8e24d25773eea9916de8);
+            
+    
+            var marker_2845f12e60d59bb7ff9c573342599602 = L.marker(
+                [41.05831853, 29.11340743],
+                {
+}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+            var icon_71acc20cc895711a4a22b41f92e5d0ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd6ac2f65320b8cff81b9160d6c5e8d4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a7ad2ed0ef02e735b4c36799d94f998c = $(`<div id="html_a7ad2ed0ef02e735b4c36799d94f998c" style="width: 100.0%; height: 100.0%;"><b>[xlsx] Hekimbaşı Katı Atık Aktama İstasyonu </b></div>`)[0];
+                popup_dd6ac2f65320b8cff81b9160d6c5e8d4.setContent(html_a7ad2ed0ef02e735b4c36799d94f998c);
+            
+        
+
+        marker_2845f12e60d59bb7ff9c573342599602.bindPopup(popup_dd6ac2f65320b8cff81b9160d6c5e8d4)
+        ;
+
+        
+    
+    
+                marker_2845f12e60d59bb7ff9c573342599602.setIcon(icon_71acc20cc895711a4a22b41f92e5d0ec);
+            
+    
+            var marker_214bb95894998086176853a6d0265de6 = L.marker(
+                [40.86088235, 29.34715122],
+                {
+}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+            var icon_4356e70602b028aba7de0ee0afb134cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_979eaa5e75fa11a1923e9fd6edcdaf5e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8463835348dd80c333c15877dc67dce0 = $(`<div id="html_8463835348dd80c333c15877dc67dce0" style="width: 100.0%; height: 100.0%;"><b>[xlsx] Aydınlı Katı Atık Aktarma İstasyonu </b></div>`)[0];
+                popup_979eaa5e75fa11a1923e9fd6edcdaf5e.setContent(html_8463835348dd80c333c15877dc67dce0);
+            
+        
+
+        marker_214bb95894998086176853a6d0265de6.bindPopup(popup_979eaa5e75fa11a1923e9fd6edcdaf5e)
+        ;
+
+        
+    
+    
+                marker_214bb95894998086176853a6d0265de6.setIcon(icon_4356e70602b028aba7de0ee0afb134cc);
+            
+    
+            var marker_a7f452ac57fb9d699aae7b45068a51ab = L.marker(
+                [41.15313753, 29.63946372],
+                {
+}
+            ).addTo(map_4159807e5fd3686f163bdbab4a3e371d);
+        
+    
+            var icon_e4a830caa5836ea8a57354a63b411df2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9bc1435b9b5482349091413440aa97e7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_044ffc2bbc37d481ddd89129cfd7e7cd = $(`<div id="html_044ffc2bbc37d481ddd89129cfd7e7cd" style="width: 100.0%; height: 100.0%;"><b>[xlsx] Şile Katı Atık Aktarma İstasyonu </b></div>`)[0];
+                popup_9bc1435b9b5482349091413440aa97e7.setContent(html_044ffc2bbc37d481ddd89129cfd7e7cd);
+            
+        
+
+        marker_a7f452ac57fb9d699aae7b45068a51ab.bindPopup(popup_9bc1435b9b5482349091413440aa97e7)
+        ;
+
+        
+    
+    
+                marker_a7f452ac57fb9d699aae7b45068a51ab.setIcon(icon_e4a830caa5836ea8a57354a63b411df2);
+            
+</script>
+</html>
