@@ -44,10 +44,13 @@ def _reconstruct_from_routes(sol: dict) -> dict:
         for pos in range(len(route) - 1):
             i, j = route[pos], route[pos + 1]
             x_val[(i, j, k)] = True
-        # arrival times: accumulate from depot
+        # arrival times: accumulate from depot, waiting if a node is not open yet.
         arr = 0.0
         for pos, node in enumerate(route):
-            t_val[(node, k)] = arr
+            if pos > 0:
+                arr = max(arr, inst["tw_early"][node])
+            if node != inst["depot"] or pos == 0:
+                t_val[(node, k)] = arr
             if pos < len(route) - 1:
                 nxt = route[pos + 1]
                 arr += svc[node] + tau[node, nxt]

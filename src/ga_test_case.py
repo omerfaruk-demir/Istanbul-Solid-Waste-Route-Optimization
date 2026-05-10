@@ -25,11 +25,15 @@ def _truck_load(route: list[int], stations: set[int], demand: dict[int, float]) 
     return sum(demand[node] for node in route if node in stations)
 
 
-def _arrival_times(route: list[int], tau: dict[tuple[int, int], float],
-                   service_time: dict[int, float]) -> dict[int, float]:
+def _arrival_times(route: list[int], instance: dict) -> dict[int, float]:
+    tau = instance["time_min"]
+    service_time = instance["service_time"]
+    tw_early = instance["tw_early"]
     arrivals: dict[int, float] = {}
     elapsed = 0.0
     for pos, node in enumerate(route):
+        if pos > 0:
+            elapsed = max(elapsed, tw_early[node])
         arrivals[node] = elapsed
         if pos < len(route) - 1:
             elapsed += service_time[node] + tau[node, route[pos + 1]]
@@ -37,7 +41,7 @@ def _arrival_times(route: list[int], tau: dict[tuple[int, int], float],
 
 
 def _is_route_time_feasible(route: list[int], instance: dict) -> bool:
-    arrivals = _arrival_times(route, instance["time_min"], instance["service_time"])
+    arrivals = _arrival_times(route, instance)
     for node, arrival in arrivals.items():
         if arrival < instance["tw_early"][node] - 1e-6:
             return False
