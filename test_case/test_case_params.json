@@ -1,0 +1,9 @@
+{
+  "num_trucks": 2,
+  "capacity_tonnes_per_truck": 15.0,
+  "avg_speed_kmh": 40.0,
+  "horizon_min": 960,
+  "depot_node_id": "D0",
+  "disposal_node_ids": ["F1"],
+  "notes": "Synthetic Kadikoy-cluster test instance. Total demand = 28.5 t, 2 trucks x 15 t = 30 t capacity so feasible. All trucks start and end at depot D0. Each truck visits a subset of S1-S6 then drives to F1 disposal and back to D0."
+}

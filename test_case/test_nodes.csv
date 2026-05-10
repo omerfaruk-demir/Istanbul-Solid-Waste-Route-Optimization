@@ -1,0 +1,9 @@
+node_id,name,node_type,lat,lon,demand_tonnes,service_time_min,time_window_early,time_window_late
+D0,Kadikoy Depot (Test),Depot,41.0082,29.0378,0,0,0,960
+S1,Moda Transfer Point,TransferStation,41.0031,29.0260,4.5,15,60,480
+S2,Kadikoy Merkez Transfer,TransferStation,41.0086,29.0304,6.0,15,60,480
+S3,Yeldeğirmeni Transfer,TransferStation,41.0051,29.0355,3.5,15,60,480
+S4,Fikirtepe Transfer,TransferStation,41.0003,29.0433,5.0,15,60,480
+S5,Kozyatagi Transfer,TransferStation,40.9905,29.0661,4.0,15,60,480
+S6,Bostanci Transfer,TransferStation,40.9679,29.0913,5.5,15,60,480
+F1,Komurculoda Disposal Facility,Disposal,41.1509,29.3693,0,20,0,960

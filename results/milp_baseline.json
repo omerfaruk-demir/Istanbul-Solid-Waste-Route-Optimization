@@ -1,0 +1,132 @@
+{
+  "description": "MILP baseline on Kadikoy synthetic test case. Ground truth for comparing GA and SA solutions.",
+  "test_case": "data/test_case/test_nodes.csv",
+  "solver": "PuLP CBC",
+  "n_runs": 3,
+  "statuses": [
+    "Optimal",
+    "Optimal",
+    "Optimal"
+  ],
+  "aggregate": {
+    "objective_mean": 135.8678,
+    "objective_stdev": 0.0,
+    "distance_mean_km": 135.8678,
+    "distance_stdev_km": 0.0,
+    "runtime_mean_s": 2.1291,
+    "runtime_stdev_s": 0.0375
+  },
+  "ground_truth": {
+    "total_distance_km": 135.8678,
+    "objective_value": 135.8678,
+    "trucks_used": 2,
+    "routes": {
+      "0": [
+        "D0",
+        "S3",
+        "S1",
+        "S2",
+        "F1",
+        "D0"
+      ],
+      "1": [
+        "D0",
+        "S4",
+        "S5",
+        "S6",
+        "F1",
+        "D0"
+      ]
+    }
+  },
+  "validation_passed": true,
+  "validation_details": {
+    "coverage": "PASS",
+    "capacity": "PASS",
+    "flow_conservation": "PASS",
+    "depot_constraints": "PASS",
+    "time_windows": "PASS",
+    "schedule_consistency": "PASS",
+    "waste_balance": "PASS"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "status": "Optimal",
+      "objective_value": 135.8678,
+      "total_distance_km": 135.8678,
+      "trucks_used": 2,
+      "runtime_seconds": 2.0938,
+      "routes": {
+        "0": [
+          "D0",
+          "S3",
+          "S1",
+          "S2",
+          "F1",
+          "D0"
+        ],
+        "1": [
+          "D0",
+          "S4",
+          "S5",
+          "S6",
+          "F1",
+          "D0"
+        ]
+      }
+    },
+    {
+      "run": 2,
+      "status": "Optimal",
+      "objective_value": 135.8678,
+      "total_distance_km": 135.8678,
+      "trucks_used": 2,
+      "runtime_seconds": 2.1251,
+      "routes": {
+        "0": [
+          "D0",
+          "S3",
+          "S1",
+          "S2",
+          "F1",
+          "D0"
+        ],
+        "1": [
+          "D0",
+          "S4",
+          "S5",
+          "S6",
+          "F1",
+          "D0"
+        ]
+      }
+    },
+    {
+      "run": 3,
+      "status": "Optimal",
+      "objective_value": 135.8678,
+      "total_distance_km": 135.8678,
+      "trucks_used": 2,
+      "runtime_seconds": 2.1684,
+      "routes": {
+        "0": [
+          "D0",
+          "S3",
+          "S1",
+          "S2",
+          "F1",
+          "D0"
+        ],
+        "1": [
+          "D0",
+          "S4",
+          "S5",
+          "S6",
+          "F1",
+          "D0"
+        ]
+      }
+    }
+  ]
+}
