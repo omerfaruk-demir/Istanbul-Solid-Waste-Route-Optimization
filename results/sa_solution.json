@@ -1,31 +1,33 @@
 {
   "status": "Feasible",
-  "objective_value": 135.8678,
+  "objective_value": 359.0341,
   "total_distance_km": 135.8678,
+  "total_travel_time_min": 359.0341,
   "trucks_used": 2,
-  "runtime_seconds": 0.0879,
+  "runtime_seconds": 0.1313,
   "routes": {
     "0": [
-      "D0",
-      "S3",
-      "S1",
-      "S2",
-      "F1",
-      "D0"
-    ],
-    "1": [
       "D0",
       "S4",
       "S5",
       "S6",
       "F1",
       "D0"
+    ],
+    "1": [
+      "D0",
+      "S3",
+      "S1",
+      "S2",
+      "F1",
+      "D0"
     ]
   },
   "route_loads_tonnes": {
-    "0": 14.0,
-    "1": 14.5
+    "0": 14.5,
+    "1": 14.0
   },
+  "uses_time_dependent_travel": true,
   "validation_passed": true,
   "validation_details": {
     "coverage": "PASS",

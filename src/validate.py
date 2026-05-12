@@ -6,6 +6,10 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).parent.parent
+import sys
+sys.path.insert(0, str(ROOT))
+
+from src.traffic import travel_time_min
 
 
 # ---------------------------------------------------------------------------
@@ -18,6 +22,14 @@ def _haversine_km(lat1, lon1, lat2, lon2):
     dlon = radians(lon2 - lon1)
     a = sin(dlat / 2) ** 2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon / 2) ** 2
     return R * 2 * atan2(sqrt(a), sqrt(1 - a))
+
+
+def _use_traffic(sol: dict) -> bool:
+    return bool(sol.get("uses_time_dependent_travel"))
+
+
+def _arc_time(sol: dict, instance: dict, i: int, j: int, departure_min: float) -> float:
+    return travel_time_min(instance, i, j, departure_min, use_traffic=_use_traffic(sol))
 
 
 def _reconstruct_from_routes(sol: dict) -> dict:
@@ -54,7 +66,7 @@ def _reconstruct_from_routes(sol: dict) -> dict:
                 t_val[(node, k)] = arr
             if pos < len(route) - 1:
                 nxt = route[pos + 1]
-                arr += svc[node] + tau[node, nxt]
+                arr += svc[node] + _arc_time(sol, inst, node, nxt, arr)
         # loads
         for node in route:
             if node in S:
@@ -231,7 +243,8 @@ def check_schedule_consistency(sol: dict, instance: dict) -> bool:
                     continue
                 if not x.get((i, j, k), False):
                     continue
-                required = t.get((i, k), 0.0) + svc[i] + tau[i, j]
+                dep_i = t.get((i, k), 0.0)
+                required = dep_i + svc[i] + _arc_time(sol, instance, i, j, dep_i)
                 actual   = t.get((j, k), 0.0)
                 if actual >= required - 1e-3:
                     _pass(
