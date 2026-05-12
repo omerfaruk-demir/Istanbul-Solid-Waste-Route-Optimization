@@ -12,6 +12,7 @@ ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT))
 
 from src.milp_test_case import load_instance
+from src.traffic import route_schedule, travel_time_min
 from src.validate import validate_all
 
 RESULTS_DIR = ROOT / "results"
@@ -27,18 +28,7 @@ def _truck_load(route: list[int], stations: set[int], demand: dict[int, float]) 
 
 
 def _arrival_times(route: list[int], instance: dict) -> dict[int, float]:
-    tau = instance["time_min"]
-    service_time = instance["service_time"]
-    tw_early = instance["tw_early"]
-    arrivals: dict[int, float] = {}
-    elapsed = 0.0
-    for pos, node in enumerate(route):
-        if pos > 0:
-            elapsed = max(elapsed, tw_early[node])
-        arrivals[node] = elapsed
-        if pos < len(route) - 1:
-            elapsed += service_time[node] + tau[node, route[pos + 1]]
-    return arrivals
+    return route_schedule(route, instance)["arrivals"]
 
 
 def _route_time_penalty(route: list[int], instance: dict) -> float:
@@ -52,7 +42,7 @@ def _route_time_penalty(route: list[int], instance: dict) -> float:
     return_end = (
         arrivals[route[-2]]
         + instance["service_time"][route[-2]]
-        + instance["time_min"][route[-2], route[-1]]
+        + travel_time_min(instance, route[-2], route[-1], arrivals[route[-2]])
     )
     if return_end > instance["horizon"]:
         penalty += return_end - instance["horizon"]
@@ -73,16 +63,15 @@ def _objective(assignments: list[list[int]], instance: dict) -> tuple[float, lis
     station_set = set(instance["stations"])
     capacity = instance["capacity"]
     demand = instance["demand"]
-    dist = instance["dist_km"]
 
-    total_distance = 0.0
+    total_travel_time = 0.0
     penalty = 0.0
     visited: list[int] = []
 
     for route in routes:
         if not route:
             continue
-        total_distance += _route_distance(route, dist)
+        total_travel_time += route_schedule(route, instance)["travel_time_min"]
         load = _truck_load(route, station_set, demand)
         if load > capacity:
             penalty += (load - capacity) * 1000.0
@@ -92,7 +81,7 @@ def _objective(assignments: list[list[int]], instance: dict) -> tuple[float, lis
     missing = set(instance["stations"]).difference(visited)
     duplicates = len(visited) - len(set(visited))
     penalty += (len(missing) + duplicates) * 10000.0
-    return total_distance + penalty, routes
+    return total_travel_time + penalty, routes
 
 
 def _initial_assignments(instance: dict) -> list[list[int]]:
@@ -154,11 +143,17 @@ def _solution_from_routes(routes: Iterable[list[int]], instance: dict,
     station_set = set(instance["stations"])
     demand = instance["demand"]
     total_distance = sum(_route_distance(route, dist) for route in routes_idx.values() if route)
+    total_travel_time = sum(
+        route_schedule(route, instance)["travel_time_min"]
+        for route in routes_idx.values()
+        if route
+    )
 
     return {
         "status": "Feasible",
         "objective_value": round(objective, 4),
         "total_distance_km": round(total_distance, 4),
+        "total_travel_time_min": round(total_travel_time, 4),
         "trucks_used": sum(1 for route in routes_idx.values() if route),
         "runtime_seconds": round(runtime_seconds, 4),
         "routes": {
@@ -170,6 +165,7 @@ def _solution_from_routes(routes: Iterable[list[int]], instance: dict,
             k: round(_truck_load(route, station_set, demand), 4)
             for k, route in routes_idx.items()
         },
+        "uses_time_dependent_travel": True,
         "instance": instance,
     }
 
@@ -227,6 +223,7 @@ def print_solution(sol: dict) -> None:
     print(f"  Status          : {sol['status']}")
     print(f"  Objective       : {sol['objective_value']}")
     print(f"  Total distance  : {sol['total_distance_km']} km")
+    print(f"  Travel time     : {sol['total_travel_time_min']} min")
     print(f"  Trucks used     : {sol['trucks_used']} / {sol['instance']['num_trucks']}")
     print(f"  Runtime         : {sol['runtime_seconds']} s")
     print()

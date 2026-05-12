@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import sys
 import time
 from math import atan2, cos, radians, sin, sqrt
 from pathlib import Path
@@ -12,11 +13,15 @@ import pulp
 # Paths
 # ---------------------------------------------------------------------------
 ROOT        = Path(__file__).parent.parent
+sys.path.insert(0, str(ROOT))
 DATA_DIR    = ROOT / "test_case"
 NODES_CSV   = DATA_DIR / "test_nodes.csv"
 PARAMS_JSON = DATA_DIR / "test_case_params.json"
 RESULTS_DIR = ROOT / "results"
+TRAFFIC_JSON = ROOT / "outputs" / "eda_output" / "alpha_r.json"
 RESULTS_DIR.mkdir(exist_ok=True)
+
+from src.traffic import load_traffic_profile
 
 
 # ---------------------------------------------------------------------------
@@ -82,6 +87,8 @@ def load_instance(nodes_csv: Path = NODES_CSV,
         "service_time": {i: float(nodes.loc[i, "service_time_min"]) for i in range(n)},
         "tw_early":   {i: float(nodes.loc[i, "time_window_early"]) for i in range(n)},
         "tw_late":    {i: float(nodes.loc[i, "time_window_late"])  for i in range(n)},
+        "traffic_profile": load_traffic_profile(TRAFFIC_JSON),
+        "traffic_start_hour": int(params.get("start_hour", 7)),
         "nodes_df":   nodes,
         "params":     params,
     }
