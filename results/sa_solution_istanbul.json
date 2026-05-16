@@ -1,0 +1,70 @@
+{
+  "status": "Feasible",
+  "objective_value": 317.483,
+  "total_distance_km": 465.6417,
+  "total_travel_time_min": 317.483,
+  "trucks_used": 5,
+  "runtime_seconds": 0.3709,
+  "routes": {
+    "0": [],
+    "1": [
+      "D0",
+      "S8",
+      "S9",
+      "F1",
+      "D0"
+    ],
+    "2": [],
+    "3": [],
+    "4": [
+      "D0",
+      "S2",
+      "S4",
+      "F1",
+      "D0"
+    ],
+    "5": [
+      "D0",
+      "S1",
+      "S5",
+      "F1",
+      "D0"
+    ],
+    "6": [
+      "D0",
+      "S6",
+      "S7",
+      "F1",
+      "D0"
+    ],
+    "7": [
+      "D0",
+      "S3",
+      "F1",
+      "D0"
+    ],
+    "8": []
+  },
+  "route_loads_tonnes": {
+    "0": 0,
+    "1": 11.4266,
+    "2": 0,
+    "3": 0,
+    "4": 12.591,
+    "5": 11.5731,
+    "6": 12.9095,
+    "7": 7.5467,
+    "8": 0
+  },
+  "uses_time_dependent_travel": true,
+  "validation_passed": true,
+  "validation_details": {
+    "coverage": "PASS",
+    "capacity": "PASS",
+    "flow_conservation": "PASS",
+    "depot_constraints": "PASS",
+    "time_windows": "PASS",
+    "schedule_consistency": "PASS",
+    "waste_balance": "PASS"
+  }
+}

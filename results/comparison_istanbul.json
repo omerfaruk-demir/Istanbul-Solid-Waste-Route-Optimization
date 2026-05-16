@@ -1,0 +1,153 @@
+{
+  "metrics": {
+    "ga": {
+      "status": "Feasible",
+      "total_distance_km": 454.4079,
+      "total_td_cost_min": 454.4385,
+      "trucks_used": 9,
+      "runtime_seconds": 3.8002,
+      "runtime_stdev": null,
+      "n_runs": 1,
+      "uses_td_travel": false,
+      "capacity_violations": 0,
+      "coverage_violations": 0,
+      "missing_stations": [],
+      "validation_passed": true,
+      "validation_details": {
+        "coverage": "PASS",
+        "capacity": "PASS",
+        "flow_conservation": "PASS",
+        "depot_constraints": "PASS",
+        "time_windows": "PASS",
+        "schedule_consistency": "PASS",
+        "waste_balance": "PASS"
+      },
+      "route_details": {
+        "0": {
+          "distance_km": 116.5923,
+          "td_time_min": 116.9,
+          "load_tonnes": 14.31
+        },
+        "1": {
+          "distance_km": 130.4079,
+          "td_time_min": 130.24,
+          "load_tonnes": 12.59
+        },
+        "2": {
+          "distance_km": 151.103,
+          "td_time_min": 150.04,
+          "load_tonnes": 14.75
+        },
+        "3": {
+          "distance_km": 0.0,
+          "td_time_min": 0.0,
+          "load_tonnes": 0.0
+        },
+        "4": {
+          "distance_km": 0.0,
+          "td_time_min": 0.0,
+          "load_tonnes": 0.0
+        },
+        "5": {
+          "distance_km": 0.0,
+          "td_time_min": 0.0,
+          "load_tonnes": 0.0
+        },
+        "6": {
+          "distance_km": 0.0,
+          "td_time_min": 0.0,
+          "load_tonnes": 0.0
+        },
+        "7": {
+          "distance_km": 0.0,
+          "td_time_min": 0.0,
+          "load_tonnes": 0.0
+        },
+        "8": {
+          "distance_km": 56.3048,
+          "td_time_min": 57.26,
+          "load_tonnes": 14.4
+        }
+      },
+      "gap_to_milp_pct": null
+    },
+    "sa": {
+      "status": "Feasible",
+      "total_distance_km": 465.6417,
+      "total_td_cost_min": 467.5262,
+      "trucks_used": 9,
+      "runtime_seconds": 0.3709,
+      "runtime_stdev": null,
+      "n_runs": 1,
+      "uses_td_travel": true,
+      "capacity_violations": 0,
+      "coverage_violations": 0,
+      "missing_stations": [],
+      "validation_passed": true,
+      "validation_details": {
+        "coverage": "PASS",
+        "capacity": "PASS",
+        "flow_conservation": "PASS",
+        "depot_constraints": "PASS",
+        "time_windows": "PASS",
+        "schedule_consistency": "PASS",
+        "waste_balance": "PASS"
+      },
+      "route_details": {
+        "0": {
+          "distance_km": 0.0,
+          "td_time_min": 0.0,
+          "load_tonnes": 0.0
+        },
+        "1": {
+          "distance_km": 166.0237,
+          "td_time_min": 165.21,
+          "load_tonnes": 11.43
+        },
+        "2": {
+          "distance_km": 0.0,
+          "td_time_min": 0.0,
+          "load_tonnes": 0.0
+        },
+        "3": {
+          "distance_km": 0.0,
+          "td_time_min": 0.0,
+          "load_tonnes": 0.0
+        },
+        "4": {
+          "distance_km": 130.4079,
+          "td_time_min": 130.24,
+          "load_tonnes": 12.59
+        },
+        "5": {
+          "distance_km": 44.3188,
+          "td_time_min": 45.07,
+          "load_tonnes": 11.57
+        },
+        "6": {
+          "distance_km": 72.722,
+          "td_time_min": 73.95,
+          "load_tonnes": 12.91
+        },
+        "7": {
+          "distance_km": 52.1693,
+          "td_time_min": 53.05,
+          "load_tonnes": 7.55
+        },
+        "8": {
+          "distance_km": 0.0,
+          "td_time_min": 0.0,
+          "load_tonnes": 0.0
+        }
+      },
+      "gap_to_milp_pct": null
+    }
+  },
+  "summary": {
+    "best_cost": "ga",
+    "best_distance": "ga",
+    "fastest": "sa",
+    "fewest_trucks": "ga",
+    "all_feasible": true
+  }
+}

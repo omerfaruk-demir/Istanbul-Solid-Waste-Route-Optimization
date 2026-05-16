@@ -142,7 +142,6 @@ def build_and_solve(instance: dict,
     dem  = instance["demand"]
     a    = instance["tw_early"]
     b    = instance["tw_late"]
-
     # Per-arc Big-M: arrival at j can be at most H; departure from i at least 0.
     # Tight M_ij = H so the LP relaxation stays as tight as possible.
     M_arc = H
@@ -191,9 +190,9 @@ def build_and_solve(instance: dict,
             for k in K:
                 prob += (x[f, s, k] == 0, f"no_f_to_s_f{f}_s{s}_k{k}")
         # Stations cannot go directly back to depot — must pass through F first.
-        for s in S:
-            for k in K:
-                prob += (x[s, d0, k] == 0, f"no_s_to_depot_s{s}_k{k}")
+    for s in S:
+        for k in K:
+            prob += (x[s, d0, k] == 0, f"no_s_to_depot_s{s}_k{k}")
 
     # ── Constraint (eq. 6): Coverage ────────────────────────────────────────
     for i in S:
@@ -202,13 +201,27 @@ def build_and_solve(instance: dict,
             f"eq6_coverage_{i}"
         )
 
-    # ── Constraint (eq. 7): Capacity ────────────────────────────────────────
+# ── Constraint (eq. 7): Capacity ────────────────────────────────────────
     for k in K:
         prob += (
-            pulp.lpSum(w[i, k] for i in S) <= Q,
-            f"eq7_capacity_k{k}"
+            pulp.lpSum(dem[i] * pulp.lpSum(x[i, j, k] for j in N if j != i) for i in S) <= Q,
+            f"capacity_k{k}"
         )
 
+    # ── At least one disposal per used truck ────────────────────────────────
+    for k in K:
+        prob += (
+            pulp.lpSum(u[f, k] for f in F) >= u[d0, k],
+            f"must_visit_at_least_one_disposal_k{k}"
+        )
+    
+    # ── Forbid disposal-to-disposal arcs ────────────────────────────────────
+    for f1 in F:
+        for f2 in F:
+            if f1 != f2:
+                for k in K:
+                    prob += (x[f1, f2, k] == 0, f"no_disp_disp_{f1}_{f2}_k{k}")
+    
     # ── Constraint (eq. 8): Flow conservation ───────────────────────────────
     for i in N:
         for k in K:
@@ -367,17 +380,18 @@ def print_solution(sol: dict) -> None:
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    print("Loading test instance...")
-    inst = load_instance()
+    from src.data_loader import load_istanbul_instance
+    print("Loading Istanbul instance...")
+    inst = load_istanbul_instance()
+    
+    # Simplify: only 2 main disposal facilities (F1=Odayeri, F2=Kömürcüoda)
+    main_disposal = [i for i in inst["disposal"] if inst["idx_to_id"][i] in ("F1", "F2")]
+    inst["disposal"] = main_disposal
+    inst["num_trucks"] = 4
     print(f"  {inst['n']} nodes | {len(inst['stations'])} stations | "
-          f"{inst['num_trucks']} trucks | cap {inst['capacity']} t")
+          f"{inst['num_trucks']} trucks | cap {inst['capacity']} t | "
+          f"{len(inst['disposal'])} disposal")
 
-    print("\nSolving MILP (CBC)...")
+    print("\nSolving MILP (CBC)... (this may take a while)")
     sol = build_and_solve(inst, time_limit=60, verbose=False)
     print_solution(sol)
-
-    out = {k: v for k, v in sol.items()
-           if k not in ("x_val", "w_val", "t_val", "routes_idx", "instance")}
-    with open(RESULTS_DIR / "milp_solution.json", "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=2)
-    print(f"\nSolution saved to results/milp_solution.json")
